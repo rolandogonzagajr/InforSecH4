@@ -12,7 +12,7 @@ body {
     min-height: 100vh; /* Ensure a minimum height of the viewport */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
-    background-color: #f0f0f0;
+    background-color: #fff
 }
 
 .container {
