@@ -1,3 +1,4 @@
+User
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12,7 +13,6 @@ body {
     min-height: 100vh; /* Ensure a minimum height of the viewport */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
-    background-color: #fff
 }
 
 .container {
@@ -40,8 +40,6 @@ h1 {
     flex-direction: column;
     justify-content: space-between; /* Distribute space evenly, pushing content to the bottom */
     min-height: 100%; /* Extend leftnav to the bottom of the container */
-    background-color: #04AA6D; /* Background color on hover */
-    color: #fff; /* Text color on hover */
 }
 
 /* Rest of your CSS styles */
