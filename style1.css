@@ -27,7 +27,7 @@ h1 {
     font-size: 40px;
     line-height: 1.2;
     margin: 0;
-    align-items: center;
+    text-align: center;
 }
 .content {
     padding: 20px;
