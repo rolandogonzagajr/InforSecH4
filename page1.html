@@ -20,7 +20,7 @@
         <div class="content">
             <h1 class="content">Schneier 2015: Applied Cryptography: Chapter 1: Foundations</h1>
  <h2>1.1 TERMINOLOGY</h2>
-    <ol>
+    <ul>
         <li>Ciphertext: The encrypted form of a message or data, typically unintelligible without decryption.</li>
         <li>Plaintext: The original, unencrypted message or data that is to be protected by encryption.</li>
         <li>Encryption: The process of converting plaintext into ciphertext to protect its confidentiality.</li>
@@ -41,7 +41,7 @@
         <li>Public Key: A part of asymmetric cryptography, a publicly shared key used for encryption or verifying digital signatures.</li>
         <li>Private Key: A part of asymmetric cryptography, a secret key kept by the owner for decrypting data or creating digital signatures.</li>
         <li>Digital Signature: A cryptographic technique used to verify the authenticity and integrity of digital messages or documents.</li>
-    </ol>
+    </ul>
 
     <h2>1.2 STEGANOGRAPHY</h2>
     <p>Schneier defines steganography as a way to hide secret messages in other messages, such that the secret's very existence is concealed.</p>
@@ -57,7 +57,7 @@
     </ul>
     <p>In a transposition cipher, the plaintext remains the same, but the order of characters is shuffled around. In a simple columnar transposition cipher, the plaintext is written horizontally onto a piece of graph paper of fixed width, and the ciphertext is read off vertically.</p>
 
-             <h2>1.4 SIMPLE XOR:</h2>
+             <h2>1.4 SIMPLE XOR</h2>
     <p>Schneier describes XOR (exclusive OR) as a basic binary operation represented by '^' in C or in mathematical notation. It has the following characteristics:</p>
     <ul>
         <li>XOR operation results in 0 when applied to two 0s or two 1s.</li>
@@ -67,7 +67,7 @@
     </ul>
     <p>Schneier points out that the simple-XOR algorithm is essentially a Vigenère polyalphabetic cipher and is considered somewhat primitive in the world of cryptography. Despite its simplicity, it was prevalent in commercial software packages, particularly those in the MS-DOS and Macintosh environments. When encountering software claiming to have a "proprietary" encryption algorithm that is significantly faster than DES (Data Encryption Standard), it is likely to be some variant of the simple-XOR algorithm.</p>
 
-    <h2>1.5 ONE-TIME PADS:</h2>
+    <h2>1.5 ONE-TIME PADS</h2>
     <p>Classically, a one-time pad is nothing more than a large nonrepeating set of truly random key letters, written on sheets of paper, and glued together in a pad. The scheme is perfectly secure as long as the key sequence is truly random and never reused. However, practical challenges include generating and securely distributing random key sequences, ensuring perfect synchronization between sender and receiver, and the key length must match the message length.</p>
 
     <h2>1.6 COMPUTER ALGORITHMS</h2>
@@ -78,7 +78,7 @@
         <li><strong>DSA (Digital Signature Algorithm, used as part of the Digital Signature Standard):</strong> DSA is another public-key algorithm. It cannot be used for encryption, but only for digital signatures.</li>
     </ul>
 
-    <h2>1.7</h2>
+    <h2>1.7 LARGE NUMBERS</h2>
     <p>Schneier provides a table (Table 1.1) that offers physical analogues to help readers grasp the scale and significance of various large numbers used in cryptography. These numbers are approximations and are sourced from a variety of references. Here are some key analogues and numbers presented in the table:</p>
 
             
