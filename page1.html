@@ -18,8 +18,97 @@
             <a href="page6.html"> c) Encrypt and decrypt a message
         </div>
         <div class="content">
-            <h1 class="content">Topic 1</h1>
+            <h1 class="content">Schneier 2015: Applied Cryptography: Chapter 1: Foundations</h1>
+ <h2>1.1 TERMINOLOGY</h2>
+    <ol>
+        <li>Ciphertext: The encrypted form of a message or data, typically unintelligible without decryption.</li>
+        <li>Plaintext: The original, unencrypted message or data that is to be protected by encryption.</li>
+        <li>Encryption: The process of converting plaintext into ciphertext to protect its confidentiality.</li>
+        <li>Decryption: The reverse process of encryption, converting ciphertext back into plaintext to make it readable.</li>
+        <li>Cipher: A specific algorithm or method used for encryption and decryption.</li>
+        <li>Key: A parameter or secret used in conjunction with a cipher to control the encryption and decryption processes.</li>
+        <li>Cryptanalysis: The study of breaking cryptographic systems, often involving analyzing ciphertext to reveal the plaintext or encryption keys.</li>
+        <li>Cryptology: The broader field encompassing both cryptography (protecting information) and cryptanalysis (breaking cryptographic systems).</li>
+        <li>Authentication: The process of verifying the identity of a user or system to ensure the security of communication.</li>
+        <li>Cryptosystem: The combination of a cipher and key management system used to encrypt and decrypt messages or data.</li>
+        <li>Confidentiality: The property of data or information being kept secret and inaccessible to unauthorized users or entities.</li>
+        <li>Integrity: Ensuring that data or information remains unchanged and unaltered during transmission or storage.</li>
+        <li>Availability: The quality of data or information being accessible and usable when needed by authorized users.</li>
+        <li>Security: The overall protection of data, systems, and communications from unauthorized access, tampering, or disruption.</li>
+        <li>Authentication: The process of verifying the identity of a user or system to ensure that they are who they claim to be.</li>
+        <li>Authorization: Granting or restricting access to specific resources or actions based on a user's authenticated identity.</li>
+        <li>Key Management: The practice of securely generating, distributing, and managing cryptographic keys used in encryption and decryption.</li>
+        <li>Public Key: A part of asymmetric cryptography, a publicly shared key used for encryption or verifying digital signatures.</li>
+        <li>Private Key: A part of asymmetric cryptography, a secret key kept by the owner for decrypting data or creating digital signatures.</li>
+        <li>Digital Signature: A cryptographic technique used to verify the authenticity and integrity of digital messages or documents.</li>
+    </ol>
 
+    <h2>1.2 STEGANOGRAPHY</h2>
+    <p>Schneier defines steganography as a way to hide secret messages in other messages, such that the secret's very existence is concealed.</p>
+
+    <h2>1.3 SUBSTITUTION CIPHERS AND TRANSPOSITION CIPHERS</h2>
+    <p>A substitution cipher is one in which each character in the plaintext is substituted for another character in the ciphertext. The receiver inverts the substitution on the ciphertext to recover the plaintext.</p>
+    <p>There are four types of substitution ciphers:</p>
+    <ul>
+        <li><strong>Monoalphabetic substitution ciphers:</strong> In this type of cipher, each letter of the plaintext is replaced with a single, fixed letter of the ciphertext. The Caesar cipher is a simple example of a monoalphabetic substitution cipher. The Caesar cipher uses a shift of 3, while ROT13 uses a shift of 13. This means that A in the plaintext becomes D in the ciphertext for the Caesar cipher, and N in the plaintext becomes W in the ciphertext for ROT13.</li>
+        <li><strong>Polyalphabetic substitution ciphers:</strong> In this type of cipher, multiple substitution tables are used. This makes it more difficult for an attacker to break the cipher, as they would need to know all of the substitution tables.</li>
+        <li><strong>Homophonic substitution ciphers:</strong> In this type of cipher, multiple letters of the plaintext can be mapped to the same letter of the ciphertext. This makes it even more difficult for an attacker to break the cipher.</li>
+        <li><strong>Autokey ciphers:</strong> In this type of cipher, the key is generated from the plaintext itself. This makes it very difficult for an attacker to guess the key.</li>
+    </ul>
+    <p>In a transposition cipher, the plaintext remains the same, but the order of characters is shuffled around. In a simple columnar transposition cipher, the plaintext is written horizontally onto a piece of graph paper of fixed width, and the ciphertext is read off vertically.</p>
+
+             <h2>1.4 SIMPLE XOR:</h2>
+    <p>Schneier describes XOR (exclusive OR) as a basic binary operation represented by '^' in C or in mathematical notation. It has the following characteristics:</p>
+    <ul>
+        <li>XOR operation results in 0 when applied to two 0s or two 1s.</li>
+        <li>It yields 1 when applied to a 0 and a 1, or vice versa.</li>
+        <li>When XOR is applied to a value 'a' and itself, the result is always 0.</li>
+        <li>Repeated XOR with the same value 'b' on the result of 'a XOR b' will revert the result back to 'a'.</li>
+    </ul>
+    <p>Schneier points out that the simple-XOR algorithm is essentially a Vigenère polyalphabetic cipher and is considered somewhat primitive in the world of cryptography. Despite its simplicity, it was prevalent in commercial software packages, particularly those in the MS-DOS and Macintosh environments. When encountering software claiming to have a "proprietary" encryption algorithm that is significantly faster than DES (Data Encryption Standard), it is likely to be some variant of the simple-XOR algorithm.</p>
+
+    <h2>1.5 ONE-TIME PADS:</h2>
+    <p>Classically, a one-time pad is nothing more than a large nonrepeating set of truly random key letters, written on sheets of paper, and glued together in a pad. The scheme is perfectly secure as long as the key sequence is truly random and never reused. However, practical challenges include generating and securely distributing random key sequences, ensuring perfect synchronization between sender and receiver, and the key length must match the message length.</p>
+
+    <h2>1.6 COMPUTER ALGORITHMS</h2>
+    <p>There are many cryptographic algorithms. These are three of the most common:</p>
+    <ul>
+        <li><strong>DES (Data Encryption Standard):</strong> DES is the most popular computer encryption algorithm. DES is a U.S. and international standard. It is a symmetric algorithm; the same key is used for encryption and decryption.</li>
+        <li><strong>RSA (named for its creators—Rivest, Shamir, and Adleman):</strong> RSA is the most popular public-key algorithm. It can be used for both encryption and digital signatures.</li>
+        <li><strong>DSA (Digital Signature Algorithm, used as part of the Digital Signature Standard):</strong> DSA is another public-key algorithm. It cannot be used for encryption, but only for digital signatures.</li>
+    </ul>
+
+    <h2>1.7</h2>
+    <p>Schneier provides a table (Table 1.1) that offers physical analogues to help readers grasp the scale and significance of various large numbers used in cryptography. These numbers are approximations and are sourced from a variety of references. Here are some key analogues and numbers presented in the table:</p>
+
+            import pandas as pd
+
+# Create a list of data
+data = [
+    ["Odds of being killed by lightning (per day)", 1e-9],
+    ["Odds of winning the top prize in a U.S. state lottery", 1e-255],
+    ["Odds of winning the top prize in a U.S. state lottery and being killed by lightning in the same day", 2.1e-288],
+    ["Odds of drowning (in the U.S. per year)", 1e-59000],
+    ["Odds of being killed in an automobile accident (in the U.S. in 1993)", 1e-88],
+    ["Odds of being killed in an automobile accident (in the U.S. per lifetime)", 1e-103],
+    ["Time until the next ice age", 14000],
+    ["Time until the sun goes nova", 1e9],
+    ["Age of the planet", 1e9],
+    ["Age of the Universe", 1e10],
+    ["Number of atoms in the planet", 1e51],
+    ["Number of atoms in the sun", 1e57],
+    ["Number of atoms in the galaxy", 1e67],
+    ["Number of atoms in the Universe (dark matter excluded)", 1e77],
+    ["Volume of the Universe", 1e84],
+    ["Total lifetime of the Universe (if closed)", 1e11],
+    ["Total lifetime of the Universe (if open)", 1e18],
+]
+
+# Create a DataFrame
+df = pd.DataFrame(data, columns=["Physical Analogue", "Number"])
+
+# Print the DataFrame
+print(df)
 
     
         </div>
