@@ -27,8 +27,6 @@ body {
     h1 {
     font-size: 40px;
     line-height: 1.2;
-    text-align: center; /* Center the text horizontally within its container */
-    margin: 0; /* Remove any default margin */
 }
 
    
