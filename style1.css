@@ -25,11 +25,15 @@ body {
 h1 {
     
     margin: 0 auto;
+font-size: 40px;
+  line-height: 1.2;
+  margin: 0 auto; /* This will center the h1 text horizontally and vertically */
+  text-align: center;
    
 }
 .content {
     padding: 20px;
-    margin-left: 350px; /* Adjust this value to increase spacing */
+    margin-left: 300px; /* Adjust this value to increase spacing */
 }
 
 .leftnav {
