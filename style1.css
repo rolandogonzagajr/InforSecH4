@@ -22,15 +22,16 @@ body {
     padding-right: 40px;
 }
 
-h1 {
-    
 
+
+    h1 {
     font-size: 40px;
     line-height: 1.2;
-    margin: 0 auto; /* This will center the h1 text horizontally and vertically */
-    text-align: center;
-   
+    text-align: center; /* Center the text horizontally within its container */
+    margin: 0; /* Remove any default margin */
 }
+
+   
 .content {
     padding: 20px;
     margin-left: 300px; /* Adjust this value to increase spacing */
