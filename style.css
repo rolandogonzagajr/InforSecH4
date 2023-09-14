@@ -41,9 +41,6 @@ h1 {
     min-height: 100%; /* Extend leftnav to the bottom of the container */
 }
 
-/* Rest of your CSS styles */
-
-
 .leftnav a {
     text-decoration: none;
     color: inherit; /* Use the inherited font color */
