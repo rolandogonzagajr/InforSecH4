@@ -65,3 +65,8 @@ body {
 .leftnav a:hover {
     background-color: #04AA6D;
 }
+
+   iframe {
+            display: block;
+            margin: 0 auto;
+        }
