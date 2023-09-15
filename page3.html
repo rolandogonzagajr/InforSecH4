@@ -20,9 +20,9 @@
         <div class="content">
             <h1 class="content">LastPass</h1>
           
-    <p>LastPass is a helpful tool for keeping online accounts and sensitive info safe. It's like a locked digital box for storing strong passwords and secret stuff.</p>
+    <p><strong></strong>LastPass is a helpful tool for keeping online accounts and sensitive info safe. It's like a locked digital box for storing strong passwords and secret stuff.</p>
 
-    <p>It protects against:</p>
+   <h2>It protects against:</h2>
 
     <ul>
         <li><strong>Password Theft:</strong> LastPass makes strong, unique passwords for each account, making it hard for threat actors to get in.</li>
@@ -30,7 +30,15 @@
         <li><strong>Data Breaches:</strong> LastPass looks out for any hacks that might affect email or accounts and sends alerts quickly for protection.</li>
         <li><strong>Dark Web Check:</strong> It keeps an eye on the hidden dark web for signs of stolen data and sends alerts if anything suspicious is found.</li>
     </ul>
+<h2>How Does LastPass Encryption Work?</h2>
 
+    <ul>
+        <li><strong>Zero-Knowledge Encryption:</strong> LastPass uses a zero-knowledge encryption method, ensuring that only the user knows their Master Password, which is the key to decrypt their password vault. LastPass never stores this Master Password on its servers.</li>
+
+        <li><strong>Encryption and Hashing:</strong> In more detail, LastPass employs 256-bit AES encryption/decryption and the PBKDF2 derivation function with a secure hash (SHA256) along with salting. These processes transform the Master Password into an encryption key, which is further converted into an authentication hash.</li>
+
+        <li><strong>Authentication:</strong> The authentication hash plays a crucial role in authenticating the user's identity. It verifies that the plaintext Master Password entered during login matches the derived authentication hash stored on LastPass's server. Through these encryption and hashing methods, the user's Master Password and sensitive vault data remain known only to the user.</li>
+    </ul>
 
 
     
